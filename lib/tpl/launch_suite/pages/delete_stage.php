@@ -1,0 +1,2 @@
+<button type="button" class="op-pb-button red"><?php _e('Delete Stage', 'optimizepress') ?></button><br /><br />
+<p class="op-micro-copy"><?php _e('Deleting this stage will remove all settings linked to this stage in the funnel. You will still be able to assign launch pages to other stages.', 'optimizepress') ?></p>

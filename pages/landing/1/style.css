@@ -1,0 +1,16 @@
+@import url('../../../lib/js/fancybox/jquery.fancybox.css');
+@import url('../../../lib/css/wp.css');
+@import url('../../global/css/base.css');
+@import url('../../global/css/skeleton.css');
+@import url('../../global/css/layout.css');
+@import url('../../global/css/elements.css');
+@import url('../../global/css/lp.css');
+
+.featured-panel {
+	background-color: #fff;
+}
+
+.container .fourteen.columns .row,
+.container .fourteen.columns .row.one-col .one.cols {
+	width: 540px;
+}

@@ -1,0 +1,167 @@
+/**
+ * Alignment
+ */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 20px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Images
+ */
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+    max-width: 97.5%;
+    width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+.entry-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+    margin-bottom: 20px;
+}
+
+p img,
+.wp-caption {
+    margin-top: 0.4em;
+}
+
+.wp-caption {
+    background: #eee;
+    margin-bottom: 1.625em;
+    max-width: 96%;
+    padding: 9px;
+}
+
+.wp-caption img {
+    display: block;
+    margin: 0 auto;
+    max-width: 98%;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    color: #666;
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.wp-caption .wp-caption-text {
+    margin-bottom: 0px;
+    padding: 10px 0 5px 0px;
+    position: relative;
+}
+
+#content .gallery {
+    margin: 0 auto 1.625em;
+}
+
+#content .gallery a img {
+    border: none;
+}
+
+img#wpstats {
+    display: block;
+    margin: 0 auto 1.625em;
+}
+
+#content .gallery-columns-4 .gallery-item {
+    width: 23%;
+    padding-right: 2%;
+}
+
+#content .gallery-columns-4 .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Image borders */
+/*img[class*="align"],
+img[class*="wp-image-"],
+#content .gallery .gallery-icon img {
+     Add fancy borders to all WordPress-added images but not things like badges and icons and the like
+}*/
+
+.wp-caption img {
+    border-color: #eee;
+}
+
+/* Add some useful style to those fancy borders for linked images... */
+a:focus img[class*="align"],
+a:hover img[class*="align"],
+a:active img[class*="align"],
+a:focus img[class*="wp-image-"],
+a:hover img[class*="wp-image-"],
+a:active img[class*="wp-image-"],
+#content .gallery .gallery-icon a:focus img,
+#content .gallery .gallery-icon a:hover img,
+#content .gallery .gallery-icon a:active img {
+    border-color: #bbb;
+}
+
+/* ...including captioned images! */
+.wp-caption a:focus img,
+.wp-caption a:active img,
+.wp-caption a:hover img {
+    background: #fff;
+    border-color: #ddd;
+}
+
+/* Password Protected Posts */
+.post-password-required .entry-header .comments-link {
+    margin: 1.625em 0 0;
+}
+
+.post-password-required input[type=password] {
+    margin: 0.8125em 0;
+}
+
+.post-password-required input[type=password]:focus {
+    background: #f7f7f7;
+}
+
+/**
+ * Insert / edit link
+ */
+.wp-dialog #wp-link #link-options label span {
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+.wp-dialog #wp-link .link-target { margin: 5px 0 0 5px; }
+.wp-dialog #wp-link input { height: auto; }
+
+.grecaptcha-badge {
+    display: none;
+}

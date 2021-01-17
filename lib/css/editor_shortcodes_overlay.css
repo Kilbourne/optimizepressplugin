@@ -1,0 +1,8 @@
+div.mce-inline-toolbar-grp {
+    z-index: 100001;
+}
+
+.file-preview .preview-image img {
+    max-width: 100%;
+    height: auto;
+}

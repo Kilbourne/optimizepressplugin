@@ -1,0 +1,142 @@
+
+			#epicbox-overlay {
+				background-color: #000;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				height: 100%;
+				width: 100%;
+				z-index: 99999;
+				display: none;
+			}
+
+			#epicbox {
+				background-color: #fff;
+				-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-o-border-radius: 8px;
+				border-radius: 8px;
+				-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+				-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+				-o-box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+				box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+				width: 500px;
+				max-height: 90%;
+				min-height: 300px;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				margin-left: -270px;
+				z-index: 100000;
+				display: none;
+			}
+
+			#epicbox .epicbox-content {
+				overflow-y: auto;
+			}
+
+			#epicbox .epicbox-content .epicbox-scroll {
+				padding: 20px;
+			}
+
+			#epicbox .close {
+				background-image: url('../../../js/fancybox/fancybox_close.png');
+				background-repeat: no-repeat;
+				position: absolute;
+				top: -18px;
+				right: -18px;
+				width: 36px;
+				height: 36px;
+				cursor: pointer;
+				z-index: 100004;
+			}
+
+
+
+
+
+
+			/* styling for sell-box-1 */
+
+			#epicbox.sell-box-1 {
+				text-align: center;
+				background-color: transparent;
+				border: 5px solid rgba(0,0,0,0.14);
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				-o-box-shadow: none;
+				box-shadow: none;
+				height: 470px !important;
+			}
+
+			#epicbox.sell-box-1 .epicbox-content {
+				background-color: #fff;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			}
+
+			#epicbox.sell-box-1 h1 {
+				color: #4f4f4f;
+				font-size: 30px;
+				line-height: 1.3em;
+				margin-bottom: 0.5em;
+			}
+
+			#epicbox.sell-box-1 h2 {
+				color: #808080;
+				font-size: 18px;
+				line-height: 1.3em;
+			}
+
+			#epicbox.sell-box-1 h1, #epicbox.sell-box-1 h2 {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-weight: 300;
+			}
+
+
+			#epicbox.sell-box-1 input[type="text"], #epicbox.sell-box-1 input[type="email"] {
+				margin: 10px auto;
+				display: block;
+				padding: 15px 20px;
+				background-color: #f8f8f8;
+				text-align: center;
+				font-size: 18px;
+				color: #a3a3a3;
+				width: 300px;
+				-webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.27);
+				-moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.27);
+				-o-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.27);
+				box-shadow: inset 0px 0px 5px rgba(0,0,0,0.27);
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				-o-border-radius: 4px;
+				border-radius: 4px;
+			}
+
+			#epicbox.sell-box-1 form {
+				margin-top: 25px;
+			}
+
+			#epicbox.sell-box-1 .button-style-2 span {
+				width: 300px;
+				padding: 9px 20px;
+				font-weight: normal;
+				font-size: 26px;
+			}
+
+			#epicbox.sell-box-1 .secure-icon {
+				color: #808080;
+				font-size: 12px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+
+			#epicbox.sell-box-1 .secure-icon img {
+				position: relative;
+				top: 2px;
+				left: -2px;
+			}
+
+

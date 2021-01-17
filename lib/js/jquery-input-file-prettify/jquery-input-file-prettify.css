@@ -1,0 +1,8 @@
+.jquery-input-file-prettify { position: relative; overflow: hidden; }
+.jquery-input-file-prettify input { position: absolute; display: block; left: 0; top: -999px; opacity: 0; cursor: pointer; }
+.jquery-input-file-prettify a { display: inline-block; min-height: 16px; margin: 0 12px 0 0; padding: 5px 15px; font-size: 13px; line-height: 15px; text-decoration: none; outline: 0; color: #666; border: 1px solid #ccc; background: #f6f6f6; -webkit-border-radius: 14px; border-radius: 14px; }
+.jquery-input-file-prettify span { position: absolute; display: block; top: 0; left: auto; right: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.jquery-input-file-prettify label { line-height: 28px; font-size: 14px; cursor: default; color: #666; }
+.jquery-input-file-prettify-hover a { border: 1px solid #aaa; color: #555; }
+.jquery-input-file-prettify-hover label { color: #555; }
+.jquery-input-file-prettify-label-link label { cursor: pointer; }

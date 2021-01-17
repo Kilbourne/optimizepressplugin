@@ -1,0 +1,218 @@
+/**
+ * CSS FOR LANDING PAGES
+ */
+
+/**
+ * Page header
+ */
+.op-page-header {
+    padding: 0px;
+    color: #fff;
+}
+
+.op-page-header,
+.op-page-header .navigation ul ul li {
+    background-color: #252525;
+}
+
+.op-page-header .navigation {
+    /* #content-area is set to z-index:20, that's why we need to set navigation to at least 21 */
+    z-index: 21;
+}
+
+.op-page-header.op-page-header-blue,
+.op-page-header.op-page-header-blue .navigation ul ul li {
+    background-color: #37729e;
+}
+
+.op-page-header a,
+.op-page-header .navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.op-page-header .op-logo {
+    float: left;
+    font-size: 17px;
+    line-height: 19px;
+    padding: 0;
+    margin: 0 80px 0 0;
+    text-transform: uppercase;
+}
+
+.op-page-header {
+    position: relative;
+    z-index: 21; /* to ensure it's positioned above the content */
+}
+
+/* nav-bar-above should be above the logo container (set to z-index:9998) and above the nav-bar-below (set to z-index:21 via op-page-header) */
+.op-page-header.nav-bar-above { z-index: 9999; }
+
+.op-page-header .navigation ul {
+    list-style: none;
+    margin: 0;
+}
+
+.op-page-header .navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.op-page-header .navigation a {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.9;
+    line-height: 19px;
+}
+
+
+/**
+ * Page banner
+ */
+.banner {
+    padding: 30px 0px;
+}
+
+.banner.centered-banner {
+    padding: 0px;
+}
+
+.banner.centered-banner > .fixed-width {
+    width: auto;
+    text-align: center;
+    padding: 0px;
+}
+
+.banner.centered-banner > .fixed-width .banner-logo {
+    margin-bottom: 0px;
+    line-height: 0;
+}
+
+.banner.centered-banner > .fixed-width .banner-logo a {
+    display: block;
+    line-height: 0;
+}
+
+.banner.centered-banner > .fixed-width .banner-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner a {
+    color: #000;
+    text-decoration: none;
+}
+
+.banner .op-logo {
+    float: left;
+    margin-right: 80px;
+    min-height: 39px;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.banner .op-logo img {
+    display:inline-block;
+    vertical-align:middle;
+    max-width:250px;
+    max-height:50px;
+}
+
+.banner .op-logo>h1{
+    margin-bottom: 0;
+}
+
+.banner .site-title {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.banner .site-title>h1{
+    font-family: inherit;
+    color: inherit;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.banner .site-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.banner .navigation.fly-to-left {
+    margin-top:0px;
+}
+
+.banner.no-logo .navigation.fly-to-left {
+    margin-top:10px;
+}
+
+.banner .navigation ul {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+.banner .navigation ul li {
+    display: inline;
+    margin-right: 10px;
+    line-height: 39px;
+}
+
+.banner .navigation a {
+    font-weight: bold;
+}
+
+
+/**
+ * Navigation Bars
+ */
+.nav-bar-above,
+.nav-bar-below {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.op-page-header .navigation a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-shadow: 0px 1px 1px #000, 0px 1px 1px rgba(0, 0, 0, 0.5);
+    text-rendering:optimizelegibility;
+}
+
+.banner .navigation {
+    margin-top: 10px;
+}
+
+.banner .navigation a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-rendering: optimizelegibility;
+}
+
+
+/**
+ * RESPONSIVE ELEMENTS CODE
+ */
+@media only screen and (max-width: 768px) {
+    .banner .op-logo {
+        float: none;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .banner .op-logo img {
+        float: none;
+        margin: 0px auto;
+    }
+}

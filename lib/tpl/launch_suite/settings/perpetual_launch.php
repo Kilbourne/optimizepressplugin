@@ -1,0 +1,3 @@
+<div class="op-bsw-grey-panel-content op-bsw-grey-panel-no-sidebar" id="op_perpetual_launch">
+	<p class="op-micro-copy"><?php _e('Use this option to put your launch into "Perpetual" mode. This means that each new visitor coming through your funnel will only see pages they have been directly linked to, giving the impression of a live launch.<br />Please note to use this function you must publish all pages/stages and then use your autoresponder to send out the links to the pages over the course of your launch (you would use the followup email function to do this in your email service provider)', 'optimizepress') ?></p>
+</div>

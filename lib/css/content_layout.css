@@ -1,0 +1,32 @@
+#wpadminbar { display: none; }
+
+body {
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+label {
+    text-align: left;
+    font-weight: normal;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+    width: 120px;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+.icon32 {
+    display: none;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+}

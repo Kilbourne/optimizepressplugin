@@ -1,0 +1,40 @@
+html {
+    background: #fff;
+    margin-bottom: 0;
+}
+
+body.mce-content-body {
+    padding: 20px 30px !important;
+    background-color: #fff;
+    background-image: none;
+}
+
+.wpview {
+    box-sizing: border-box;
+    outline-offset: -2px;
+}
+
+.wpview-wrap:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+a.css-button {
+    width: inherit !important;
+    height: inherit !important;
+}
+.mce-content-body ul, .mce-content-body ol {
+    padding-left: 40px;
+}
+
+/**
+ * Tinymce adds an p tag for bookmarks, but
+ * we don't really want to show them
+ */
+[data-mce-type="bookmark"] {
+    display: none;
+}
