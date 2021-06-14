@@ -3,7 +3,7 @@
 Plugin Name: OptimizePress
 Plugin URI: http://www.optimizepress.com/
 Description: OptimizePress is the essential plugin for marketers. Create squeeze pages, sales letters and much more with ease.
-Version: 2.5.24
+Version: 2.5.25
 Author: OptimizePress
 Author URI: http://www.optimizepress.com/
 */

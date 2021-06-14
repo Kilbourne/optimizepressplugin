@@ -21,8 +21,6 @@ class OP_SidebarAdvertisingWidget extends WP_Widget {
 
     //Content of widget gets output here
     function widget($args, $instance){
-    @session_start();
-    $theme = (isset($_SESSION['theme']) ? $_SESSION['theme'] : 1);
     $grid = op_mod('advertising')->display(array('advertising', 'sidebar', 'grid'),true);
     $rectangular = op_mod('advertising')->display(array('advertising', 'sidebar', 'rectangular'),true);
     if($grid != '' || $rectangular != ''): ?>
@@ -32,9 +30,9 @@ class OP_SidebarAdvertisingWidget extends WP_Widget {
     <?php
     endif;
     op_mod('advertising')->display(array('advertising', 'sidebar', 'large_ad1'));
-    call_user_func('theme'.$theme.'_generate_sidebar_tabs');
+    call_user_func('theme1_generate_sidebar_tabs');
     op_mod('advertising')->display(array('advertising', 'sidebar', 'large_ad2'));
-    call_user_func('theme'.$theme.'_generate_sidebar_tabs', 2);
+    call_user_func('theme1_generate_sidebar_tabs', 2);
     }
 }
 

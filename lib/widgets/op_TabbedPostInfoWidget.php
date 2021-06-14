@@ -46,16 +46,11 @@ class OP_TabbedPostInfoWidget extends WP_Widget {
 
     //Content of widget gets output here
     function widget($args, $instance){
-        @session_start();
-
-        //Get the current theme number
-        $theme = (isset($_SESSION['theme']) ? $_SESSION['theme'] : 1);
-
         //Set tabs to show
-        $popularTab = (isset($instance['popular']) && $instance['popular']==1 ? array('popular' => array(__('Popular', 'optimizepress'),'theme'.$theme.'_popular_posts',array(array('ulclass'=>'tab-popular miniposts article-list')))) : array());
-        $recentTab = (isset($instance['recent']) && $instance['recent']==1 ? array('recent' => array(__('Recent', 'optimizepress'),'theme'.$theme.'_recent_posts',array(array('ulclass'=>'tab-recent miniposts article-list')))) : array());
-        $commentsTab = (isset($instance['comments']) && $instance['comments']==1 ? array('comments' => array(__('Comments', 'optimizepress'),'theme'.$theme.'_recent_comments',array(array('ulclass'=>'tab-comments miniposts article-list')))) : array());
-        $tagsTab = (isset($instance['tags']) && $instance['tags']==1 ? array('tags' => array(__('Tags', 'optimizepress'),'theme'.$theme.'_list_tags',array(array('ulclass'=>'tab-tags miniposts article-list')))) : array());
+        $popularTab = (isset($instance['popular']) && $instance['popular']==1 ? array('popular' => array(__('Popular', 'optimizepress'),'theme1_popular_posts',array(array('ulclass'=>'tab-popular miniposts article-list')))) : array());
+        $recentTab = (isset($instance['recent']) && $instance['recent']==1 ? array('recent' => array(__('Recent', 'optimizepress'),'theme1_recent_posts',array(array('ulclass'=>'tab-recent miniposts article-list')))) : array());
+        $commentsTab = (isset($instance['comments']) && $instance['comments']==1 ? array('comments' => array(__('Comments', 'optimizepress'),'theme1_recent_comments',array(array('ulclass'=>'tab-comments miniposts article-list')))) : array());
+        $tagsTab = (isset($instance['tags']) && $instance['tags']==1 ? array('tags' => array(__('Tags', 'optimizepress'),'theme1_list_tags',array(array('ulclass'=>'tab-tags miniposts article-list')))) : array());
 
         //Merge tab arrays into one array
         $tabs = array_merge((array)$popularTab, (array)$recentTab, (array)$commentsTab, (array)$tagsTab);

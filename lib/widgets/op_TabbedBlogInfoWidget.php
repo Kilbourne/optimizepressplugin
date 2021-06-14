@@ -40,15 +40,10 @@ class OP_TabbedBlogInfoWidget extends WP_Widget {
 
     //Content of widget gets output here
     function widget($args, $instance){
-        @session_start();
-
-        //Get the current theme number
-        $theme = (isset($_SESSION['theme']) ? $_SESSION['theme'] : 1);
-
         //Set tabs to show
-        $categoriesTab = (isset($instance['categories']) && $instance['categories']==1 ? array('categories' => array(__('Categories', 'optimizepress'),'theme'.$theme.'_category_panel',array(array('ulclass'=>'tab-categories miniposts page-list')))) : array());
-        $archivesTab = (isset($instance['archives']) && $instance['archives']==1 ? array('archives' => array(__('Archives', 'optimizepress'),'theme'.$theme.'_archives_panel',array(array('ulclass'=>'tab-archives miniposts page-list')))) : array());
-        $pagesTab = (isset($instance['pages']) && $instance['pages']==1 ? array('pages' => array(__('Pages', 'optimizepress'),'theme'.$theme.'_pages_panel',array(array('ulclass'=>'tab-pages miniposts page-list')))) : array());
+        $categoriesTab = (isset($instance['categories']) && $instance['categories']==1 ? array('categories' => array(__('Categories', 'optimizepress'),'theme1_category_panel',array(array('ulclass'=>'tab-categories miniposts page-list')))) : array());
+        $archivesTab = (isset($instance['archives']) && $instance['archives']==1 ? array('archives' => array(__('Archives', 'optimizepress'),'theme1_archives_panel',array(array('ulclass'=>'tab-archives miniposts page-list')))) : array());
+        $pagesTab = (isset($instance['pages']) && $instance['pages']==1 ? array('pages' => array(__('Pages', 'optimizepress'),'theme1_pages_panel',array(array('ulclass'=>'tab-pages miniposts page-list')))) : array());
 
         //Merge tab arrays into one array
         $tabs = array_merge((array)$categoriesTab, (array)$archivesTab, (array)$pagesTab);
