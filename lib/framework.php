@@ -3,7 +3,7 @@
 if(!function_exists('op_define_vars')){
     function op_define_vars(){
         //Init constants
-        define('OP_VERSION', '2.5.25');
+        define('OP_VERSION', '2.5.26');
 
         define('OP_TYPE','plugin');
         define('OP_SN','optimizepress'); //Short/safe name

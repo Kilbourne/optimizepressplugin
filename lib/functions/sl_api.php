@@ -6,8 +6,8 @@
  */
 class OptimizePress_Sl_Api
 {
-	//const OP_SL_BASE_URL                = 'aHR0cDovL29wdGltaXplaHViLmNvbS9zbC9wdWJsaWMvYXBpLw==';
-    const OP_SL_BASE_URL = 'aHR0cDovLzIzLjIzLjEwMi4xNjYvc2wvcHVibGljL2FwaS8=';
+	const OP_SL_BASE_URL                = 'aHR0cDovL29wdGltaXplaHViLmNvbS9zbC9wdWJsaWMvYXBpLw==';
+    //const OP_SL_BASE_URL = 'aHR0cDovLzIzLjIzLjEwMi4xNjYvc2wvcHVibGljL2FwaS8=';
     const HEADER_INSTALLATION_URL_PARAM = 'Op-Installation-Url';
     const HEADER_API_KEY_PARAM          = 'Op-Api-Key';
     const OPTION_API_KEY_PARAM          = 'sl_api_key';
